@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 public class MoodAnalyserTest {
     @Test
-    public void testAnalyseMoodReturnsHappyWithNullMessage() {
+    public void testAnalyseMoodReturnsHappyWithNullMessage() throws MoodAnalysisException {
         MoodAnalyser analyser = new MoodAnalyser(null);
         String mood = analyser.analyseMood();
         Assertions.assertEquals("HAPPY", mood);
